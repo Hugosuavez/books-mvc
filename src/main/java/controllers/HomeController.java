@@ -18,6 +18,9 @@ public class HomeController extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		response.setHeader("Cache-control", "no-cache");
+		response.setHeader("Pragma", "no-cache");
 		request.getRequestDispatcher("index.jsp").include(request, response);
 	}
 

@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+   <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Bookshelf</title>
+	<link href="books-mvc/css/styles.css" rel="stylesheet" >
+	<meta charset="UTF-8">
+	<title>Bookshelf</title>
 </head>
 <body>
 <h1>Welcome to your book shelf!</h1>
@@ -14,7 +16,7 @@
 	<option value="adventure">Adventure</option>
 </select>
 <a href="./books">
-<button>Browse All Books</button>
+<button class="button">Browse All Books</button>
 </a>
 </body>
 </html>

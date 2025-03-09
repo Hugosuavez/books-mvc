@@ -6,39 +6,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Books</title>
+	<meta charset="UTF-8">
+	<title>Books</title>
+	<link rel="stylesheet" href="css/styles.css" >
 </head>
 <body>
 <a href="./">
 <button>Home</button>
 </a>
-	<h1>Books</h1>
-<table border="1">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Date</th>
-            <th>Genres</th>
-            <th>Characters</th>
-            <th>Synopsis</th>
-        </tr>
-    </thead>
-    <tbody>
+	<h1 class="title">Books</h1>
         <c:forEach items="${books}" var="b">
-            <tr>
-                <td>${b.getId()}</td>
-                <td>${b.getTitle()}</td>
-                <td>${b.getAuthor()}</td>
-                <td>${b.getDate()}</td>
-                <td>${b.getGenres()}</td>
-                <td>${b.getCharacters()}</td>
-                <td>${b.getSynopsis()}</td>
-            </tr>
+            <article> 
+                <h3>${b.getTitle()}</h3>
+                <p>by ${b.getAuthor()}</p>
+            	<p>${b.getId()}</p>
+                <p>${b.getDate()}</p>
+                <p>${b.getGenres()}</p>
+                <p>${b.getCharacters()}</p>
+                <p>${b.getSynopsis()}</p>
+                <p>-----------------------------------------------------------------------------</p>
+            </article>
         </c:forEach>
-    </tbody>
-</table>
 </body>
 </html>
