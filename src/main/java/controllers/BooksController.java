@@ -24,6 +24,9 @@ public class BooksController extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		response.setHeader("Cache-control", "no-cache");
+		response.setHeader("Pragma", "no-cache");
 		BookDAO dao = new BookDAO();
 		ArrayList<Book> books = dao.getAllBooks();
 		request.setAttribute("books", books);

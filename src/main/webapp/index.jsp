@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="styles.css" type="text/css"/>
 <meta charset="UTF-8">
 <title>Bookshelf</title>
 </head>
@@ -14,7 +15,7 @@
 	<option value="adventure">Adventure</option>
 </select>
 <a href="./books">
-<button>Browse All Books</button>
+<button class="button">Browse All Books</button>
 </a>
 </body>
 </html>
