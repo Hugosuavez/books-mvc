@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="books-mvc/css/styles.css" rel="stylesheet" >
+	<link href="./css/styles.css" rel="stylesheet" >
 	<meta charset="UTF-8">
 	<title>Bookshelf</title>
 </head>

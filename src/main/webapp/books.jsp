@@ -8,15 +8,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Books</title>
-	<link rel="stylesheet" href="css/styles.css" >
+	<link rel="stylesheet" href="./css/styles.css" >
 </head>
 <body>
-<a href="./">
+<a href="./home">
 <button>Home</button>
 </a>
 	<h1 class="title">Books</h1>
-        <c:forEach items="${books}" var="b">
-            <article> 
+	<div class="book-list-container">
+		<c:forEach items="${books}" var="b">
+            <article class="book-card"> 
                 <h3>${b.getTitle()}</h3>
                 <p>by ${b.getAuthor()}</p>
             	<p>${b.getId()}</p>
@@ -27,5 +28,7 @@
                 <p>-----------------------------------------------------------------------------</p>
             </article>
         </c:forEach>
+	</div>
+        
 </body>
 </html>

@@ -1,0 +1,27 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h3 {
+	color: red;
+}
+
+.book-list-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.book-card {
+	display: flex;
+	flex-direction: column;
+	
+	align-items: center;
+}
