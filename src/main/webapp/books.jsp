@@ -6,9 +6,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/styles.css" />
-<title>Books</title>
+	<link rel="stylesheet" href="./css/styles.css" />
+	<meta charset="UTF-8">
+	<title>Books</title>
 </head>
 <body>
 <a href="./">
