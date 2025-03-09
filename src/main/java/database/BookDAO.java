@@ -71,18 +71,18 @@ public class BookDAO {
 		
 	    // Create select statement and execute it
 		try{
-		    String selectSQL = "select * from books";
+		    String selectSQL = "SELECT * FROM books LIMIT 10 OFFSET 10";
 		    ResultSet rs1 = stmt.executeQuery(selectSQL);
 	    // Retrieve the results
 		    while(rs1.next()){
 		    	oneBook = getNextBook(rs1);
 		    	allBooks.add(oneBook);
 		   }
-
+		    
 		    stmt.close();
 		    closeConnection();
 		} catch(SQLException se) { System.out.println(se); }
-
+		
 	   return allBooks;
    }
 
@@ -148,6 +148,7 @@ public class BookDAO {
 		}
 		return b;
 	}
+	
 	public boolean deleteContact(int bookId) throws SQLException {
 	boolean b = false;
 	

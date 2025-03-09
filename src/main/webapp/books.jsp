@@ -10,6 +10,9 @@
 <title>Books</title>
 </head>
 <body>
+<a href="./">
+<button>Home</button>
+</a>
 	<h1>Books</h1>
 <table border="1">
     <thead>
