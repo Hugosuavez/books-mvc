@@ -11,24 +11,22 @@
 	<link rel="stylesheet" href="./css/styles.css" >
 </head>
 <body>
-<a href="./home">
-<button>Home</button>
-</a>
+	<a href="./home">
+	<button>Home</button>
+	</a>
 	<h1 class="title">Books</h1>
 	<div class="book-list-container">
 		<c:forEach items="${books}" var="b">
             <article class="book-card"> 
                 <h3>${b.getTitle()}</h3>
                 <p>by ${b.getAuthor()}</p>
-            	<p>${b.getId()}</p>
-                <p>${b.getDate()}</p>
-                <p>${b.getGenres()}</p>
-                <p>${b.getCharacters()}</p>
-                <p>${b.getSynopsis()}</p>
+                <p>Date published: ${b.getDate()}</p>
+                <p>Genres: ${b.getGenres()}</p>
+                <p>Characters: ${b.getCharacters()}</p>
+                <p>Synopsis: ${b.getSynopsis()}</p>
                 <p>-----------------------------------------------------------------------------</p>
             </article>
         </c:forEach>
 	</div>
-        
 </body>
 </html>

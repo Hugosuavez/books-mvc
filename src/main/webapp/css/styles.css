@@ -5,14 +5,16 @@ body {
     background-color: lightblue;
 }
 
-h1 {
-    color: darkblue;
-}
+
 
 h3 {
 	color: red;
 }
 
+.title {
+	color: darkblue;
+	text-align: center;
+}
 .book-list-container {
 	display: flex;
 	flex-direction: column;
@@ -22,6 +24,6 @@ h3 {
 .book-card {
 	display: flex;
 	flex-direction: column;
-	
 	align-items: center;
+	padding: 1em;
 }

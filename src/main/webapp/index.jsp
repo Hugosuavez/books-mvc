@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>Welcome to your book shelf!</h1>
-<input type=text value="Search by title or author" />
+<input type=text placeholder="Search by title or author" />
 <select name="genre" id="genre">
 	<option value="horror">Horror</option>
 	<option value="adventure">Adventure</option>
