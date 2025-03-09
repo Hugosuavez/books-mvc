@@ -3,7 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="styles.css" type="text/css"/>
+<link rel="stylesheet"
+      href="./css/styles.css"
+      type="text/css"/>
 <meta charset="UTF-8">
 <title>Bookshelf</title>
 </head>
