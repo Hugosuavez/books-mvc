@@ -12,7 +12,6 @@ public class Book {
 	
 	
 	public Book(int id, String title, String author, String date, String genres, String characters, String synopsis) {
-
 		this.id = id;
 		this.title = title;
 		this.author = author;
@@ -20,19 +19,17 @@ public class Book {
 		this.genres = genres;
 		this.characters = characters;
 		this.synopsis = synopsis;
-		
 	}
 	
 	public Book(String title, String author, String date, String genres, String characters, String synopsis) {
-
 		this.title = title;
 		this.author = author;
 		this.date = date;
 		this.genres = genres;
 		this.characters = characters;
 		this.synopsis = synopsis;
-		
 	}
+	
 	public Book() {}
 
 

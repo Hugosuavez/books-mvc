@@ -71,7 +71,7 @@ public class BookDAO {
 		
 	    // Create select statement and execute it
 		try{
-		    String selectSQL = "SELECT * FROM books LIMIT 10 OFFSET 10";
+		    String selectSQL = "SELECT * FROM books";
 		    ResultSet rs1 = stmt.executeQuery(selectSQL);
 	    // Retrieve the results
 		    while(rs1.next()){
@@ -149,7 +149,7 @@ public class BookDAO {
 		return b;
 	}
 	
-	public boolean deleteContact(int bookId) throws SQLException {
+	public boolean deleteBook(int bookId) throws SQLException {
 	boolean b = false;
 	
 	openConnection();

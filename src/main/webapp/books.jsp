@@ -29,6 +29,9 @@
                 <p><strong>Synopsis:</strong> ${b.synopsis}</p>
             </div>
         </div>
+            <a href="./deletebook?id=${b.id}">
+            <button>Delete</button>
+            </a>
         </c:forEach>
 	</div>
 </body>
