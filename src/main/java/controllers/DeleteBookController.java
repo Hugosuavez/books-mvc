@@ -45,7 +45,7 @@ public class DeleteBookController extends HttpServlet {
 		request.setAttribute("title", deletedBook.getTitle());
 		request.setAttribute("author", deletedBook.getAuthor());
 		request.getRequestDispatcher("DeleteBookSuccess.jsp").include(request, response);
-
+		
 	}
 
 

@@ -32,6 +32,9 @@
             <a href="./deletebook?id=${b.id}">
             <button>Delete</button>
             </a>
+             <a href="./updatebook?id=${b.id}">
+            <button>Update</button>
+            </a>
         </c:forEach>
 	</div>
 </body>

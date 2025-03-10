@@ -11,6 +11,6 @@
 <a href="./home">
 <button>Home</button>
 </a>
-<p>${title} by ${author} successfully added!</p>
+<p>${title} by ${author} successfully ${verb}!</p>
 </body>
 </html>
