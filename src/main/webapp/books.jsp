@@ -8,24 +8,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Books</title>
-	<link rel="stylesheet" href="css/styles.css" >
+	<link rel="stylesheet" href="./css/styles.css" >
 </head>
 <body>
-<a href="./">
-<button>Home</button>
-</a>
+	<a href="./home">
+	<button>Home</button>
+	</a>
 	<h1 class="title">Books</h1>
-        <c:forEach items="${books}" var="b">
-            <article> 
-                <h3>${b.getTitle()}</h3>
-                <p>by ${b.getAuthor()}</p>
-            	<p>${b.getId()}</p>
-                <p>${b.getDate()}</p>
-                <p>${b.getGenres()}</p>
-                <p>${b.getCharacters()}</p>
-                <p>${b.getSynopsis()}</p>
-                <p>-----------------------------------------------------------------------------</p>
-            </article>
+	<div class="book-list-container" id="book-container">
+		<c:forEach items="${books}" var="b">
+            <div class="book-card">
+            <div class="book-cover">
+                <h3 class="book-title">${b.title}</h3>
+                <p class="book-author">${b.author}</p>
+            </div>
+            <div class="book-details">
+                <p><strong>Published:</strong> ${b.date}</p>
+                <p><strong>Genres:</strong> ${b.genres}</p>
+                <p><strong>Characters:</strong> ${b.characters}</p>
+                <p><strong>Synopsis:</strong> ${b.synopsis}</p>
+            </div>
+        </div>
         </c:forEach>
+	</div>
 </body>
 </html>

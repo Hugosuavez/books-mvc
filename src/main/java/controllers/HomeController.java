@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/")
+@WebServlet("/home")
 public class HomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -21,7 +21,7 @@ public class HomeController extends HttpServlet {
 		
 		response.setHeader("Cache-control", "no-cache");
 		response.setHeader("Pragma", "no-cache");
-		request.getRequestDispatcher("index.jsp").include(request, response);
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 
 
