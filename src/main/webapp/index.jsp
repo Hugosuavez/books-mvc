@@ -18,5 +18,9 @@
 <a href="./books">
 <button class="button">Browse All Books</button>
 </a>
+<br/>
+<a href="./addbook">
+<button>Add Book</button>
+</a>
 </body>
 </html>

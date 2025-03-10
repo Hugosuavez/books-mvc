@@ -117,7 +117,7 @@ public class BookDAO {
 		openConnection();
 		boolean b = false;
 		try {
-			String sql = "insert into books (id, title, author, date, genres, characters, synopsis) values ('" + book.getId() + "','" + book.getTitle()  + "','" + book.getAuthor()  + "','" + book.getDate()  + "','" + book.getGenres()  + "','" + book.getCharacters()  + "','" + book.getSynopsis() + "');";
+			String sql = "insert into books (title, author, date, genres, characters, synopsis) values ('" + book.getTitle()  + "','" + book.getAuthor()  + "','" + book.getDate()  + "','" + book.getGenres()  + "','" + book.getCharacters()  + "','" + book.getSynopsis() + "');";
 			System.out.println(sql);
 			stmt.execute(sql);
 			stmt.close();
